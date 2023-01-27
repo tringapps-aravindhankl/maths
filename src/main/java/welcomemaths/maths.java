@@ -1,11 +1,11 @@
 package welcomemaths;
 import java.util.*;
 
-class god implements Cloneable {
+class God implements Cloneable {
     Integer x;
     Integer y;
 
-    god(Integer a, Integer b) {
+    God(Integer a, Integer b) {
         x = a;
         y = b;
     }
@@ -30,8 +30,8 @@ public class Maths
         Integer a = scan.nextInt();
         System.out.println("Enter y coordinate");
         Integer b = scan.nextInt();
-        god s1 = new god(a, b);
-        god s2 = (god)s1.clone();
+        God s1 = new God(a, b);
+        God s2 = (God)s1.clone();
         s2.active();
     }
 }
