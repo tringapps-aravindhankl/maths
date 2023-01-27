@@ -10,7 +10,7 @@ class god implements Cloneable {
         y = b;
     }
 
-    void equal() {
+    void active() {
         Boolean c = x.equals(y);
         System.out.println(c);
     }
@@ -32,6 +32,6 @@ public class Maths
         Integer b = scan.nextInt();
         god s1 = new god(a, b);
         god s2 = (god)s1.clone();
-        s2.equal();
+        s2.active();
     }
 }
