@@ -15,7 +15,7 @@ class God implements Cloneable {
         System.out.println(c);
     }
 
-      object clone() throws CloneNotSupportedException {
+    public object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
