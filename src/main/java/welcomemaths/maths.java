@@ -20,7 +20,7 @@ class god implements Cloneable {
     }
 }
 
-public class maths
+public class Maths
 {
     private static Scanner scan;
 
