@@ -1,5 +1,5 @@
 package welcomemaths;
 
-public interface cloneable {
+public interface Cloneable {
 
 }
