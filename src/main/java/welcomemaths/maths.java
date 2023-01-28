@@ -14,9 +14,17 @@ class God implements Cloneable {
         Boolean c = x.equals(y);
         System.out.println(c);
     }
-
-   God helo() throws CloneNotSupportedException {
-        return super.clone();
+    God helo()
+    {
+        try
+        {
+            return (God) super.clone();
+        }
+        catch (CloneNotSupportedException e)
+        {
+            System.out.println("cloned error");
+            return this;
+        }
     }
 }
 
