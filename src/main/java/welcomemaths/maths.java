@@ -15,7 +15,7 @@ class God implements Cloneable {
         System.out.println(c);
     }
 
-   God helo() throws CloneNotSupportedException {
+   God clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
@@ -31,7 +31,7 @@ public class Maths
         System.out.println("Enter y coordinate");
         Integer b = scan.nextInt();
         God s1 = new God(a, b);
-        God s2 = s1.helo();
+        God s2 = s1.clone();
         s2.active();
     }
 }
