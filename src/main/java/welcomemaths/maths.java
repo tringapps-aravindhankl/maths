@@ -32,7 +32,7 @@ public class Maths
 {
     private static Scanner scan;
 
-	public static void main( String[] args )throws CloneNotSupportedException{
+	public static void main( String[] args ){
     	scan = new Scanner(System.in);
         System.out.println("enter x coordinate");
         Integer a = scan.nextInt();
