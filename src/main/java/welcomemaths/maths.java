@@ -31,7 +31,7 @@ public class Maths
         System.out.println("Enter y coordinate");
         Integer b = scan.nextInt();
         God s1 = new God(a, b);
-        God s2 = (God)s1.helo();
+        God s2 = s1.helo();
         s2.active();
     }
 }
