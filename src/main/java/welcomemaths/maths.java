@@ -2,7 +2,7 @@ package welcomemaths;
 import java.util.*;
 import java.util.logging.*;
 
-class God implements Cloneable {
+class God implements cloneable {
     Integer x;
     Integer y;
     Logger log=Logger.getLogger("hi");
