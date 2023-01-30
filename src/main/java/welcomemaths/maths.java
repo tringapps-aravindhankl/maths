@@ -1,9 +1,11 @@
 package welcomemaths;
 import java.util.*;
+import java.util.logging.*;
 
 class God implements Cloneable {
     Integer x;
     Integer y;
+    Logger log=Logger.getLogger("hi");
 
     God(Integer a, Integer b) {
         x = a;
@@ -12,7 +14,7 @@ class God implements Cloneable {
 
     void active() {
         Boolean c = x.equals(y);
-        System.out.println(c);
+        log.info(c);
     }
     God helo()
     {
@@ -22,7 +24,7 @@ class God implements Cloneable {
         }
         catch (CloneNotSupportedException e)
         {
-            System.out.println("cloned error");
+            log.info("cloned error");
             return this;
         }
     }
@@ -34,9 +36,9 @@ public class Maths
 
 	public static void main( String[] args ){
     	scan = new Scanner(System.in);
-        System.out.println("enter x coordinate");
+        log.info("enter x coordinate");
         Integer a = scan.nextInt();
-        System.out.println("Enter y coordinate");
+        log.info("Enter y coordinate");
         Integer b = scan.nextInt();
         God s1 = new God(a, b);
         God s2 = s1.helo();
