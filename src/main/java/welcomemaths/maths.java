@@ -36,6 +36,7 @@ public class Maths
 
 	public static void main( String[] args ){
     	scan = new Scanner(System.in);
+	Logger log=Logger.getLogger("hi");
         log.info("enter x coordinate");
         Integer a = scan.nextInt();
         log.info("Enter y coordinate");
