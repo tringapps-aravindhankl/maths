@@ -2,25 +2,25 @@ package welcomemaths;
 import java.util.*;
 import java.util.logging.*;
 
-class God implements cloneable {
-    Integer x;
-    Integer y;
+class Graph implements cloneable {
+    Integer coordinatex;
+    Integer coordinatey;
     Logger log=Logger.getLogger("hi");
 
-    God(Integer a, Integer b) {
-        x = a;
-        y = b;
+    Graph(Integer a, Integer b) {
+       coordinatex = a;
+       coordinatey= b;
     }
 
     void active() {
-        Boolean c = x.equals(y);
+        Boolean c = coordinatex.equals(coordinatey);
         log.info(c);
     }
-    God helo()
+    Graph helo()
     {
         try
         {
-            return (God) super.clone();
+            return (Graph) super.clone();
         }
         catch (CloneNotSupportedException e)
         {
@@ -41,8 +41,8 @@ public class Maths
         Integer a = scan.nextInt();
         log.info("Enter y coordinate");
         Integer b = scan.nextInt();
-        God s1 = new God(a, b);
-        God s2 = s1.helo();
+        Graph s1 = new Graph(a, b);
+        Graph s2 = s1.helo();
         s2.active();
     }
 }
