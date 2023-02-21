@@ -16,7 +16,7 @@ class Graph implements cloneable {
 
 	    void active() {
 	        boolean condition = coordinatex.equals(coordinatey);
-	        log.log(Level.INFO,()->" "+condition);
+	        log.log(Level.INFO,()->"Answer:"+condition);
 	    }
 	    Graph helo()
 	    {
