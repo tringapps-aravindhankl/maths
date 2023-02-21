@@ -4,7 +4,7 @@ import java.util.logging.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class Graph implements Cloneable {
+class Graph implements cloneable {
 	    Integer coordinatex;
 	    Integer coordinatey;
 	    Logger log=Logger.getLogger("hi");
