@@ -3,17 +3,17 @@ import java.util.*;
 
 import java.util.logging.*;
 class Graph implements Cloneable {
-    Integer NumberX;
-    Integer NumberY;
+    Integer Numberone;
+    Integer Numbertwo;
     Logger log=Logger.getLogger("hi");
 
     Graph(Integer FirstNumber, Integer SecondNumber) {
-       this.NumberX= FirstNumber;
-       this.NumberY= SecondNumber;
+       this.Numberone= FirstNumber;
+       this.Numbertwo= SecondNumber;
     }
 
     void active() {
-        boolean condition = NumberX.equals(NumberY);
+        boolean condition = Numberone.equals(Numbertwo);
         log.log(Level.INFO,()->" "+condition);
     }
     Graph helo()
