@@ -3,13 +3,13 @@ import java.util.*;
 
 import java.util.logging.*;
 class Graph implements cloneable {
-    Integer Numberone;
-    Integer Numbertwo;
+    Integer numberone;
+    Integer numbertwo;
     Logger log=Logger.getLogger("hi");
 
-    Graph(Integer Firstnumber, Integer Secondnumber) {
-       this.Numberone= Firstnumber;
-       this.Numbertwo= Secondnumber;
+    Graph(Integer firstnumber, Integer secondnumber) {
+       this.numberone= firstnumber;
+       this.numbertwo= secondnumber;
     }
 
     void active() {
