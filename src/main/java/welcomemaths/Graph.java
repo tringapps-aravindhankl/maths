@@ -3,7 +3,7 @@ package welcomemaths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class Graph implements Cloneable {
+class Graph implements cloneable {
 	    Integer numberx;
 	    Integer numbery;
 	    Logger log=Logger.getLogger("hi");
